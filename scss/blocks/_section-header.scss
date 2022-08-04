@@ -1,0 +1,12 @@
+.section-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    max-width: 570px;
+    .section-header__text {
+        padding-top: 23px;
+        font-weight: 600;
+        color: #333333;
+    }
+}
