@@ -8,6 +8,8 @@
 }
 a {
     text-decoration: none;
+    cursor: pointer;
+    color: inherit;
 }
 ul, ol, li {
     list-style: none;
@@ -26,6 +28,7 @@ html, body {
 input, button {
     font-family: inherit;
     font-size: inherit;
+    font-weight: inherit;
 }
 button {
     background: none;

@@ -1,0 +1,36 @@
+.accordion {
+    &__item.active:not(:last-child){ 
+            margin-bottom: 40px;
+            
+    }
+    button {
+        padding-bottom: 26px;
+
+        &:after {
+            content: url(../img/notes/arr-down.svg);
+            padding-left: 8px;
+        }
+        &.active,
+        &:hover {
+            text-decoration: underline;
+        }
+        &.active {
+            padding-bottom: 10px;
+            
+            }
+        &.active::after {
+            content: url(../img/notes/arr-up.svg);
+        }
+    }
+
+    &__text_hidden {
+        display: none;
+        font-weight: 400;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        overflow: auto;
+        @include tablet {
+            max-width: 100%;
+        }
+    }
+}

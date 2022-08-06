@@ -1,10 +1,11 @@
 .team {
     background: #3023AE;
-}
-.team__container {
-    position: relative;
 
-    .team__decor1 {
+    &__container{
+        position: relative;
+    }
+
+    &__decor1 {
         position: absolute;
         width: 100px;
         height: 100px;
@@ -12,8 +13,16 @@
         top: -29px;
         background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
         border-radius: 50%;
+        @include laptop {
+            left: 409px;
+            top: -58px;
+        }
+        @include mobile {
+            left: 271px;
+            top: -30px;
+        }
     }
-    .team__decor2 {
+    &__decor2 {
         position: absolute;
         width: 323px;
         height: 323px;
@@ -21,8 +30,11 @@
         bottom: -122px;
         background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
         border-radius: 50%;
+        @include mobile {
+            bottom: -199px;
+        }
     }
-    .team__decor3 {
+    &__decor3 {
         position: absolute;
         width: 140px;
         height: 140px;
@@ -31,156 +43,98 @@
         background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
         border-radius: 50%;
     }
-}
 
-.team__block {
-    padding: 160px 0 142px 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.team__main-block {
-    padding-top: 14px;
-}
-
-.team__image-block {
-    position: relative;
-    min-height: 400px;
-    flex: 1 1 auto;
-}
-
-.team__img1 {
-    position: relative;
-    top: -16px;
-    left: 68px;
-}
-.team__img2 {
-    content: url(../img/team/1.png);
-    position: absolute;
-    left: 384px;
-    top: 190px;
-}
-.team__img3 {
-    position: absolute;
-    top: 266px;
-    left: 270px;
-}
-.team__img4 {
-    position: absolute;
-    top: 183px;
-    left: 52px;
-}
-.team__img5 {
-    position: absolute;
-    top: 8px;
-    left: 338px;
-}
-.team__img6 {
-    position: absolute;
-    top: -32px;
-    left: 37px;
-}
-
-@media (max-width: 1024px) {
-    .team__image-block {
-        flex: 0 0 auto;
-    }
-    .team__container {
-        .team__decor1 {
-            left: 409px;
-            top: -58px;
+    &__block {
+        padding: 160px 0 142px 0;
+        display: flex;
+        justify-content: space-between;
+        @include tablet {
+            padding: 80px 0;
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
-}
-@media (max-width: 767px) {
-    .team__content {
-        width: 80%;
+
+    &__main-block {
+        padding-top: 14px;
     }
-    .team__block {
-        padding: 80px 0;
-        flex-wrap: wrap;
-        justify-content: center;
+    &__image-block {
+        position: relative;
+        @include laptop {
+            flex: 0 0 auto;
+        }
+        @include tablet {
+            margin-right: 88px;
+        }
+        @include mobile {
+            margin-right: 0px;
+        }
     }
-    .team__image-block {
-        margin-right: 88px;
+
+    &__img1 {
+        position: relative;
+        top: -16px;
+        left: 68px;
+        @include mobile {
+            width: 297px;
+            height: 302px;
+            left: 0px;
+        }
     }
-    
-}
-@media (max-width: 375px) {
-    .team__image-block {
-        margin-right: 0px;
-    }
-    .team__content {
-        width: 100%;
-    }
-    .team__img1 {
-        width: 297px;
-        height: 302px;
-        left: 28px;
-    }
-    .team__img2 {
-        width: 40px;
-        height: 41px;
-        left: 257px;
-        top: 144px;
-    }
-    .team__img3 {
-        width: 66px;
-        height: 67px;
+    &__img2 {
+        content: url(../img/team/1.png);
+        position: absolute;
+        left: 384px;
         top: 190px;
-        left: 187px;
-    }
-    .team__img4,
-    .team__img5 {
-        width: 92px;
-        height: 93px;
-    }
-    .team__img4 {
-        top: 125px;
-        left: 33px;
-    }
-    .team__img5 {
-        top: 33px;
-        left: 225px;
-    }
-    .team__img6 {
-        width: 136px;
-        height: 139px;
-        top: -14px;
-        left: 31px;
-    }
-    .team__image-block {
-        min-height: 250px;
-    }
-    .team__img1 {
-        left: 0px;
-    }
-    .team__img2 {
-        left: 231px;
-    }
-    .team__img3 {
-        left: 159px;
-    }
-    .team__img4 {
-        top: 125px;
-        left: 4px;
-    }
-    .team__img5 {
-        left: 197px;
-    }
-    .team__img6 {
-        left: 3px;
-    }
-    .team__content {
-        padding-top: 0px;
-    }
-    .team__container {
-        .team__decor1 {
-            left: 271px;
-            top: -30px;
+        @include mobile {
+            width: 40px;
+            height: 41px;
+            left: 231px;
+            top: 144px;
         }
-        .team__decor2 {
-            bottom: -199px;
+    }
+    &__img3 {
+        position: absolute;
+        top: 266px;
+        left: 270px;
+        @include mobile {
+            width: 66px;
+            height: 67px;
+            top: 190px;
+            left: 159px;
+        }
+    }
+    &__img4 {
+        position: absolute;
+        top: 183px;
+        left: 52px;
+        @include mobile {
+            width: 92px;
+            height: 93px;
+            top: 125px;
+            left: 4px;
+        }
+    }
+    &__img5 {
+        position: absolute;
+        top: 8px;
+        left: 338px;
+        @include mobile {
+            width: 92px;
+            height: 93px;
+            top: 33px;
+            left: 197px;
+        }
+    }
+    &__img6 {
+        position: absolute;
+        top: -32px;
+        left: 37px;
+        @include mobile {
+            width: 136px;
+            height: 139px;
+            top: -14px;
+            left: 3px;
         }
     }
 }

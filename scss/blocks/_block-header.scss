@@ -3,10 +3,9 @@
         font-family: 'Poppins';
         font-weight: 700;
         text-transform: uppercase;
-        color: #333333;
         margin-bottom: 18px;
     }
-    .block-header_color_white {
-    color: #FFFFFF;
+    &_color_white {
+    color: $second-font-color;
     }
 }
