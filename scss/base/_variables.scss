@@ -1,0 +1,15 @@
+$accent-font-color: #333333;
+$second-font-color: #FFFFFF; 
+
+
+@mixin breakpoint($point) {
+    @if $point == lg {
+        @media(max-width: 1023px) {@content};
+    }
+    @else if $point == md {
+        @media(max-width: 767px) {@content};
+    }
+    @else if $point == sm {
+        @media(max-width: 374px) {@content};
+    }
+}
