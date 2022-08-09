@@ -20,14 +20,11 @@
     @include mobile {
         text-align: start;
         align-items: flex-start;
-        .button {
-            position: relative;
-            z-index: 2;
-        }
     }
 
     &__text {
         padding-bottom: 41px;
+
         @include tablet {
             padding-bottom: 31px;
         }
@@ -39,4 +36,12 @@
     &_black {
         color: $accent-font-color;
     }
+
+    &__button {
+        @include mobile {
+            position: relative;
+            z-index: 2;
+        }
+    }
 }
+

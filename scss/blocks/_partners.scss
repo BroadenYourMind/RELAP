@@ -6,6 +6,7 @@
 
     &__section-header {
         margin: 31px auto 64px;
+
         @include laptop {
                 margin-bottom: 48px;
         }
@@ -14,53 +15,13 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
         @include laptop {
             justify-content: space-around;
         }
         @include tablet {
             flex-direction: column;
             margin: 0 auto;
-        }
-
-        .reviews
-        {
-            &__item-review {
-                height: 272px;
-                max-width: 370px;
-                padding: 34px 32px 42px;
-                display: flex;
-                flex-direction: column;
-                background: #FFFFFF;
-                box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
-                border-radius: 3px;
-                @include laptop {
-                    max-width: 346px;
-                    margin-bottom: 25px;
-                }
-                @include tablet {
-                    margin: 0 auto 20px;
-                }
-                @include mobile {
-                    margin-bottom: 16px;
-                    width: 100%;
-                }
-
-                .item-review {
-                    &__content {
-                        padding: 15px 0 23px;
-                        width: 100%;
-                        font-weight: 400;
-                        mix-blend-mode: normal;
-                        opacity: 0.5;
-                        @include laptop {
-                            max-width: 286px;
-                        }
-                    }
-                    &__user-name {
-                        font-weight: 600;
-                    }
-                }
-            }
         }
     }
 
@@ -69,19 +30,21 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
         @include laptop {
             justify-content: center;
             padding: 40px 0;
         }
-
-        img {
-            width: 140px;
+    }
+    
+    &__img-logo {
+        width: 140px;
             height: 80px;
             -webkit-filter: grayscale(1) opacity(0.5); 
             filter: grayscale(1) opacity(0.5); 
+
             &:hover {
                 filter:grayscale(0);
             }
-        }
     }
 }

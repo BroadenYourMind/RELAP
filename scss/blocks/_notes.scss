@@ -4,6 +4,7 @@
     &__container {
         min-height: 768px;
         position: relative;
+
         @include laptop {
             display: flex;
             justify-content: space-between;
@@ -20,6 +21,7 @@
         max-width: 498px;
         max-height: 700px;
         overflow: hidden;
+
         @include laptop {
             padding-top: 100px;
             max-width: 356px;
@@ -39,6 +41,7 @@
 
     &__block-header {
         padding-bottom: 54px;
+
         @include mobile {
             padding-bottom: 40px;
         }
@@ -50,6 +53,7 @@
         height: 544px;
         top: 96px;
         left: 648px;
+
         @include laptop {
             margin-top: 96px;
             position: relative;
@@ -81,6 +85,7 @@
             height: 100%;
             top: 32px;
             left: -33px;
+
             @include mobile {
                 top: 19px;
                 left: -17px;
@@ -104,6 +109,7 @@
             top: 41%;
             left: -15.8%;
             z-index: 1;
+
             @include tablet {
                 position: absolute;
                 width: 24.2%;;
@@ -123,6 +129,7 @@
             top: 50%;
             left: -3%;
             z-index: 1;
+            
             @include tablet {
                 position: absolute;
                 width: 2.8%;

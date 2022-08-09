@@ -5,6 +5,7 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 55px;
+
         @include laptop {
             margin-bottom: 0px;
         }
@@ -20,6 +21,7 @@
     &__block-header {
         padding-top: 62px;
         flex: 0 1 431px;
+
         @include laptop {
             max-width: 350px;
         }
@@ -34,6 +36,7 @@
         font-weight: 400;
         mix-blend-mode: normal;
         opacity: 0.5;
+
         @include laptop {
             max-width: 550px;
         }
@@ -46,17 +49,7 @@
         display: flex;
         flex-wrap: wrap;
         padding-bottom: 41px;
-        & input[type=radio] + label {
-            font-weight: 400;
-            opacity: 0.5;
-        }
-        & input[type=radio]:checked + label {
-            font-weight: 600;
-            opacity: 1;
-        }
-        & label:hover {
-            text-decoration: underline;
-        }
+        
         @include laptop {
             padding-top: 46px;
         }
@@ -68,8 +61,22 @@
             justify-content: start;
         }
     }
+
+    &__label {
+        font-weight: 400;
+        opacity: 0.5;
+    }
+    &__input:checked + &__label {
+        font-weight: 600;
+        opacity: 1;
+    }
+    &__label:hover {
+        text-decoration: underline;
+    }
+
     &__radio {
         padding-right: 31px;
+
         @include tablet {
             padding-bottom: 24px;
         }
@@ -78,6 +85,7 @@
         display: flex;
         justify-content: center;
         padding: 48px 0;
+
         @include laptop {
             padding-top: 21px;
             padding-bottom: 60px;
