@@ -8,6 +8,11 @@
     &__button {
         padding-bottom: 26px;
 
+        &:after {
+            content: url(../img/notes/arr-down.svg);
+            padding-left: 8px;
+        }
+
         &_active,
         &:hover {
             text-decoration: underline;
@@ -20,11 +25,6 @@
 
         &_active::after {
             content: url(../img/notes/arr-up.svg);
-        }
-
-        &:after {
-            content: url(../img/notes/arr-down.svg);
-            padding-left: 8px;
         }
     }
 

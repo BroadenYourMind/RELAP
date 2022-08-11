@@ -60,6 +60,17 @@
             transition: right 0.3s ease 0s;
             overflow: auto;
 
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                top: 0;
+                right: 0;
+                height: 64px;
+                background: #FFFFFF;
+                z-index: 2;
+            }
+
             &_active {
                 right: 0;
             }
@@ -70,17 +81,6 @@
                 width: 100%;
                 top: 0;
                 left: 0;
-                height: 64px;
-                background: #FFFFFF;
-                z-index: 2;
-            }
-
-            &::before {
-                content: "";
-                position: absolute;
-                width: 100%;
-                top: 0;
-                right: 0;
                 height: 64px;
                 background: #FFFFFF;
                 z-index: 2;
