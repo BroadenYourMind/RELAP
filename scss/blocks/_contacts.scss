@@ -1,0 +1,109 @@
+.contacts {
+    background: url(/img/contacts/background.svg);
+
+    &__contact-us {
+        padding-top: 135px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        max-width: 570px;
+
+        @include tablet {
+            padding-top: 70px;
+        }
+    }
+
+    &__section-header {
+        padding-bottom: 34px;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 160px;
+
+        @include tablet{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 64px;
+        }
+    }
+
+    &__input {
+        padding-left: 13px;
+        min-width: 370px;
+        height: 48px;
+        background: #FFFFFF;
+        border: 1px solid #DADADA;
+        border-radius: 3px;
+
+        @include tablet{
+            margin-bottom: 16px;
+        }
+
+        @include mobile {
+            align-self: stretch;
+            min-width: 100%;
+        }
+
+        &::placeholder {
+        font-weight: 400;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        }
+    }
+
+    &__bottom {
+        border-top: 1px solid rgba(0, 0, 0, 0.295);
+
+        &__container {
+            padding-top: 61px;
+            padding-bottom: 63px;
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1 1 auto;
+            justify-content: space-between;
+
+            @include laptop {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    &__social-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        flex: 1 1 231px;
+        max-width: 239px;
+        margin-right: 31px;
+
+        @include laptop {
+            margin-top: 40px;
+            margin-right: 0;
+            align-items: center;
+            flex: 1 1 auto;
+        }
+
+        @include mobile {
+            margin-top: 21px;
+            align-items: flex-start;
+            align-self: flex-start;
+        }
+    }
+
+    &__image {
+        padding-right: 5px;
+    }
+
+    &__copyright {
+        padding: 15px 0 7px 0;
+        font-weight: 400;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+}

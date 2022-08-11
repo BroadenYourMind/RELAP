@@ -1,0 +1,142 @@
+.explore {
+    background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+    overflow: hidden;
+
+    &__container {
+        padding-top: 143px;
+        width: 100%;
+        display: flex; 
+        position: relative;
+        justify-content: space-between;
+        max-height: 768px;
+
+        @include tablet {
+            padding-top: 64px;
+            display: flex; 
+            justify-content: center;
+            flex-wrap: wrap;
+            max-height: 820px;
+        }
+    }
+
+    &__content {
+        padding: 85px 0 192px 0;
+        max-width: 360px;
+        color: $second-font-color;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-width: 100%;
+            padding-top: 23px;
+            padding-bottom: 19px;
+        }
+
+        @include mobile {
+            align-items: flex-start;
+            text-align: start;
+        }
+    }
+
+    &__title {
+        @include tablet {
+            font-size: 56px;
+            line-height: 1.14;
+            
+        }
+    }
+
+    &__text {
+        padding: 26px 0 34px 0;
+    }
+
+    &__social {
+        display: flex;
+        width: 112px;
+        justify-content: space-between;
+        position: absolute;
+        right: 15px;
+        top: 688px;
+        z-index: 5;
+
+        @include tablet {
+            left: 50%;
+            top: 750px;
+            margin-left: -60px;
+        }
+    }
+
+    &__image {
+        position: relative;
+        flex: 0 1 auto;
+
+        @include tablet {
+            max-height: 560px;
+            flex: 1 1 auto;
+        }
+
+        @include mobile {
+            display: flex;
+            width: 100%;
+            justify-content: start;
+        }
+    }
+
+    &__pic {
+        position: relative;
+        z-index: 2;
+        
+        @include tablet {
+            width: 100%;
+            min-width: 500px;
+        }
+        
+        @include mobile {
+            min-width: 135%;
+        }
+    }
+
+    &__decor {
+        position: absolute;
+        content: "";
+        background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+        border-radius: 50%;
+
+        &_1 {
+            bottom: -53px;
+            left: -49px;
+            width: 100px;
+            height: 100px;
+            
+            @include tablet {
+                bottom: 30px;
+                left: -48px;
+                width: 100px;
+                height: 100px;
+            }
+        }
+        
+        &_2 {
+            bottom: -133px;
+            right: -268px;
+            width: 396px;
+            height: 396px;
+        }
+
+        &_3 {
+            top: 37px;
+            right: 2px;
+            width: 156px;
+            height: 156px;
+        }
+
+        &_4 {
+            top: -90px;
+            right: -184px;
+            width: 78px;
+            height: 78px;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.blog {
+    background: #FDF2FF;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 112px 0;
+
+        @include laptop {
+            padding-top: 80px;
+        }
+
+        @include tablet {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-bottom: 80px;
+            padding-top: 0px;
+        }
+
+        @include mobile {
+            justify-content: start;
+            align-items: flex-start;
+        }
+    }
+    
+    &__main-block {
+        margin-top: 62px;
+
+        @include tablet {
+            margin: 45px 0;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.item-review {
+    height: 272px;
+    max-width: 370px;
+    padding: 34px 32px 42px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+    border-radius: 3px;
+
+    @include laptop {
+        max-width: 346px;
+        margin-bottom: 25px;
+        }
+
+    @include tablet {
+        margin: 0 auto 20px;
+        }
+
+    @include mobile {
+        margin-bottom: 16px;
+        width: 100%;
+        }
+
+
+    &__content {
+        padding: 15px 0 23px;
+        width: 100%;
+        font-weight: 400;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+
+        @include laptop {
+            max-width: 286px;
+        }
+    }
+    
+    &__user-name {
+        font-weight: 600;
+    }
+}
+

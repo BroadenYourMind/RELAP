@@ -1,0 +1,161 @@
+.team {
+    background: #3023AE;
+
+    &__container{
+        position: relative;
+    }
+
+    &__decor1 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 374px;
+        top: -29px;
+        background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+        border-radius: 50%;
+
+        @include laptop {
+            left: 409px;
+            top: -58px;
+        }
+
+        @include mobile {
+            left: 271px;
+            top: -30px;
+        }
+    }
+
+    &__decor2 {
+        position: absolute;
+        width: 323px;
+        height: 323px;
+        left: -239px;
+        bottom: -122px;
+        background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+        border-radius: 50%;
+
+        @include mobile {
+            bottom: -199px;
+        }
+    }
+
+    &__decor3 {
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        left: 44.1%;
+        bottom: -90px;
+        background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+        border-radius: 50%;
+    }
+
+    &__block {
+        padding: 160px 0 142px 0;
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet {
+            padding: 80px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__main-block {
+        padding-top: 14px;
+    }
+
+    &__image-block {
+        position: relative;
+
+        @include laptop {
+            flex: 0 0 auto;
+        }
+
+        @include tablet {
+            margin-right: 88px;
+        }
+
+        @include mobile {
+            margin-right: 0px;
+        }
+    }
+
+    &__img1 {
+        position: relative;
+        top: -16px;
+        left: 68px;
+
+        @include mobile {
+            width: 297px;
+            height: 302px;
+            left: 0px;
+        }
+    }
+    
+    &__img2 {
+        content: url(../img/team/1.png);
+        position: absolute;
+        left: 384px;
+        top: 190px;
+
+        @include mobile {
+            width: 40px;
+            height: 41px;
+            left: 231px;
+            top: 144px;
+        }
+    }
+
+    &__img3 {
+        position: absolute;
+        top: 266px;
+        left: 270px;
+
+        @include mobile {
+            width: 66px;
+            height: 67px;
+            top: 190px;
+            left: 159px;
+        }
+    }
+
+    &__img4 {
+        position: absolute;
+        top: 183px;
+        left: 52px;
+
+        @include mobile {
+            width: 92px;
+            height: 93px;
+            top: 125px;
+            left: 4px;
+        }
+    }
+
+    &__img5 {
+        position: absolute;
+        top: 8px;
+        left: 338px;
+
+        @include mobile {
+            width: 92px;
+            height: 93px;
+            top: 33px;
+            left: 197px;
+        }
+    }
+    
+    &__img6 {
+        position: absolute;
+        top: -32px;
+        left: 37px;
+        
+        @include mobile {
+            width: 136px;
+            height: 139px;
+            top: -14px;
+            left: 3px;
+        }
+    }
+}

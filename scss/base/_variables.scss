@@ -1,0 +1,18 @@
+$accent-font-color: #333333;
+$second-font-color: #FFFFFF; 
+
+$laptop-breakpoint: 1023px;
+$tablet-breakpoint: 767px;
+$mobile-breakpoint: 374px;
+
+@mixin laptop {
+    @media(max-width: $laptop-breakpoint) {@content};
+}
+
+@mixin tablet {
+    @media(max-width: $tablet-breakpoint) {@content};
+}
+
+@mixin mobile {
+    @media(max-width: $mobile-breakpoint) {@content};
+}

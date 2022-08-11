@@ -1,0 +1,29 @@
+.advantages {
+    background: #F2F2F2;
+
+    &__section-header {
+        margin: 0 auto ;
+        padding: 71px 0 32px 0;
+
+        @include mobile {
+            padding-top: 32px;
+        }
+    }
+
+    &__items-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 82px;
+
+        @include laptop {
+            justify-content: space-around;
+        }
+        
+        @include mobile {
+            padding-bottom: 12px;
+            position: relative;
+            z-index: 10;
+        }
+    }
+}

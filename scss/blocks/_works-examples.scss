@@ -1,0 +1,104 @@
+.works-examples {
+    background: #FDF2FF;
+
+    &__top-block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 55px;
+
+        @include laptop {
+            margin-bottom: 0px;
+        }
+
+        @include tablet {
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+        }
+
+        @include mobile {
+            text-align: start;
+        }
+    }
+
+    &__block-header {
+        padding-top: 62px;
+        flex: 0 1 431px;
+
+        @include laptop {
+            max-width: 350px;
+        }
+        @include tablet {
+            padding-top: 29px;
+        }
+    }
+
+    &__text {
+        flex: 0 1 570px;
+        padding-top: 110px;
+        max-width: 570px;
+        font-weight: 400;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+
+        @include laptop {
+            max-width: 550px;
+        }
+
+        @include tablet {
+            padding-top: 24px;
+        }
+    }
+
+    &__bar {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 41px;
+        
+        @include laptop {
+            padding-top: 46px;
+        }
+
+        @include tablet {
+            justify-content: center;
+            padding-bottom: 18px;
+        }
+
+        @include mobile {
+            justify-content: start;
+        }
+    }
+
+    &__label {
+        font-weight: 400;
+        opacity: 0.5;
+    }
+
+    &__input:checked + &__label {
+        font-weight: 600;
+        opacity: 1;
+    }
+
+    &__label:hover {
+        text-decoration: underline;
+    }
+
+    &__radio {
+        padding-right: 31px;
+
+        @include tablet {
+            padding-bottom: 24px;
+        }
+    }
+    
+    &__button-block {
+        display: flex;
+        justify-content: center;
+        padding: 48px 0;
+
+        @include laptop {
+            padding-top: 21px;
+            padding-bottom: 60px;
+        }
+    }
+}

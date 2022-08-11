@@ -1,0 +1,40 @@
+.links-block {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 650px;
+    min-width: 300px;
+
+    @include laptop {
+        flex: 1 1 100%;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    @include mobile {
+        flex-direction: column;
+        
+        &_list {
+            padding-bottom: 40px;
+        }
+    }
+
+    &__link {
+        font-weight: 400;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+
+        &_first
+        {
+            font-weight: 600;
+            opacity: 1;
+        }
+    }
+
+    &__item {
+        padding-bottom: 8px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

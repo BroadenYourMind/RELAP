@@ -1,0 +1,50 @@
+.main-block {
+    color: $second-font-color;
+    display: flex;
+    flex-direction: column;
+    max-width: 470px;
+
+    @include laptop {
+        max-width: 346px;
+        margin-left: 40px;
+    }
+
+    @include tablet {
+        flex-wrap: wrap;
+        max-width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    @include mobile {
+        text-align: start;
+        align-items: flex-start;
+    }
+
+    &__text {
+        padding-bottom: 41px;
+
+        @include tablet {
+            padding-bottom: 31px;
+        }
+    }
+
+    &__block-header {
+        padding-bottom: 23px;
+    }
+    
+    &_black {
+        color: $accent-font-color;
+    }
+
+    &__button {
+        @include mobile {
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
+
