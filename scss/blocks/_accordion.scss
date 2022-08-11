@@ -1,26 +1,30 @@
 .accordion {
     &__item {
-        &._active:not(:last-child) { 
+        &_active:not(:last-child) { 
             margin-bottom: 40px;
         }
     }
+
     &__button {
         padding-bottom: 26px;
+
+        &_active,
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &_active {
+            padding-bottom: 10px;
+            
+            }
+
+        &_active::after {
+            content: url(../img/notes/arr-up.svg);
+        }
 
         &:after {
             content: url(../img/notes/arr-down.svg);
             padding-left: 8px;
-        }
-        &._active,
-        &:hover {
-            text-decoration: underline;
-        }
-        &._active {
-            padding-bottom: 10px;
-            
-            }
-        &._active::after {
-            content: url(../img/notes/arr-up.svg);
         }
     }
 

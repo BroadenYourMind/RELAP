@@ -6,7 +6,7 @@
         padding: 71px 0 32px 0;
 
         @include mobile {
-                padding-top: 32px;
+            padding-top: 32px;
         }
     }
 
@@ -19,6 +19,7 @@
         @include laptop {
             justify-content: space-around;
         }
+        
         @include mobile {
             padding-bottom: 12px;
             position: relative;

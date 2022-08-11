@@ -9,15 +9,18 @@
         @include laptop {
             margin-bottom: 0px;
         }
+
         @include tablet {
             flex-wrap: wrap;
             text-align: center;
             justify-content: center;
         }
+
         @include mobile {
             text-align: start;
         }
     }
+
     &__block-header {
         padding-top: 62px;
         flex: 0 1 431px;
@@ -29,6 +32,7 @@
             padding-top: 29px;
         }
     }
+
     &__text {
         flex: 0 1 570px;
         padding-top: 110px;
@@ -40,6 +44,7 @@
         @include laptop {
             max-width: 550px;
         }
+
         @include tablet {
             padding-top: 24px;
         }
@@ -53,10 +58,12 @@
         @include laptop {
             padding-top: 46px;
         }
+
         @include tablet {
             justify-content: center;
             padding-bottom: 18px;
         }
+
         @include mobile {
             justify-content: start;
         }
@@ -66,10 +73,12 @@
         font-weight: 400;
         opacity: 0.5;
     }
+
     &__input:checked + &__label {
         font-weight: 600;
         opacity: 1;
     }
+
     &__label:hover {
         text-decoration: underline;
     }
@@ -81,6 +90,7 @@
             padding-bottom: 24px;
         }
     }
+    
     &__button-block {
         display: flex;
         justify-content: center;

@@ -33,6 +33,7 @@
             padding-top: 23px;
             padding-bottom: 19px;
         }
+
         @include mobile {
             align-items: flex-start;
             text-align: start;
@@ -41,8 +42,8 @@
 
     &__title {
         @include tablet {
-                font-size: 56px;
-                line-height: 1.14;
+            font-size: 56px;
+            line-height: 1.14;
             
         }
     }
@@ -75,12 +76,14 @@
             max-height: 560px;
             flex: 1 1 auto;
         }
+
         @include mobile {
             display: flex;
             width: 100%;
             justify-content: start;
         }
     }
+
     &__pic {
         position: relative;
         z-index: 2;
@@ -89,6 +92,7 @@
             width: 100%;
             min-width: 500px;
         }
+        
         @include mobile {
             min-width: 135%;
         }
@@ -113,18 +117,21 @@
                 height: 100px;
             }
         }
+        
         &_2 {
             bottom: -133px;
             right: -268px;
             width: 396px;
             height: 396px;
         }
+
         &_3 {
             top: 37px;
             right: 2px;
             width: 156px;
             height: 156px;
         }
+
         &_4 {
             top: -90px;
             right: -184px;

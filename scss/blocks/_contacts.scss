@@ -14,6 +14,7 @@
             padding-top: 70px;
         }
     }
+
     &__section-header {
         padding-bottom: 34px;
     }
@@ -42,6 +43,7 @@
         @include tablet{
             margin-bottom: 16px;
         }
+
         @include mobile {
             align-self: stretch;
             min-width: 100%;
@@ -56,6 +58,7 @@
 
     &__bottom {
         border-top: 1px solid rgba(0, 0, 0, 0.295);
+
         &__container {
             padding-top: 61px;
             padding-bottom: 63px;
@@ -70,6 +73,7 @@
             }
         }
     }
+
     &__social-block {
         display: flex;
         flex-direction: column;
@@ -84,19 +88,22 @@
             align-items: center;
             flex: 1 1 auto;
         }
+
         @include mobile {
             margin-top: 21px;
             align-items: flex-start;
             align-self: flex-start;
         }
     }
+
     &__image {
         padding-right: 5px;
     }
+
     &__copyright {
         padding: 15px 0 7px 0;
-            font-weight: 400;
-            mix-blend-mode: normal;
-            opacity: 0.5;
+        font-weight: 400;
+        mix-blend-mode: normal;
+        opacity: 0.5;
     }
 }

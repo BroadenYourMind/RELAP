@@ -10,6 +10,7 @@
             justify-content: space-between;
             flex: 0 1 50%;
         }
+
         @include tablet {
             max-height: none;
             flex-wrap: wrap;
@@ -27,6 +28,7 @@
             max-width: 356px;
             flex: 0 1 50%;
         }
+
         @include tablet {
             flex: 1 1 100%;
             padding-top: 45px;
@@ -34,6 +36,7 @@
             max-height: 1200px;
             max-width: 100%;
         }
+
         @include mobile {
             max-width: 356px;
         }
@@ -62,6 +65,7 @@
             height: 400px;
             flex: 0 1 50%;
         }
+
         @include tablet {
             flex: 1 1 100%;
             position: relative;
@@ -69,6 +73,7 @@
             left: 0;
             margin: 0px 0px 80px 40px;
         }
+
         @include mobile {
             width: 100%;
             height: 272px;
@@ -139,6 +144,7 @@
                 left: 49.5%;
                 z-index: 1;
             }
+            
             @include mobile {
                 width: 3.4%;
                 height: 3.8%;

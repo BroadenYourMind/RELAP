@@ -8,9 +8,10 @@
         margin: 31px auto 64px;
 
         @include laptop {
-                margin-bottom: 48px;
+            margin-bottom: 48px;
         }
     }
+
     &__reviews {
         display: flex;
         flex-wrap: wrap;
@@ -19,6 +20,7 @@
         @include laptop {
             justify-content: space-around;
         }
+
         @include tablet {
             flex-direction: column;
             margin: 0 auto;
@@ -39,12 +41,13 @@
     
     &__img-logo {
         width: 140px;
-            height: 80px;
-            -webkit-filter: grayscale(1) opacity(0.5); 
-            filter: grayscale(1) opacity(0.5); 
+        height: 80px;
+        -webkit-filter: grayscale(1) opacity(0.5); 
+        filter: grayscale(1) opacity(0.5); 
 
-            &:hover {
-                filter:grayscale(0);
-            }
+        &:hover {
+            -webkit-filter: grayscale(0);
+            filter:grayscale(0);
+        }
     }
 }

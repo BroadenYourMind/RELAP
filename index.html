@@ -424,9 +424,9 @@
 
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function () {
-                this.classList.toggle("_active");
+                this.classList.toggle("accordion__button_active");
                 var panel = this.nextElementSibling;
-                this.parentNode.classList.toggle("_active");
+                this.parentNode.classList.toggle("accordion__item_active");
                 if (panel.style.display === "block") {
                     panel.style.display = "none";
                 } else {
@@ -441,8 +441,8 @@
             const iconBody = document.querySelector('.menu__body')
             iconMenu.addEventListener("click", function (e) {
                 document.body.classList.toggle('_lock');
-                iconMenu.classList.toggle('_active');
-                iconBody.classList.toggle('_active');
+                iconMenu.classList.toggle('menu__icon_active');
+                iconBody.classList.toggle('menu__body_active');
             });
         }
     </script>

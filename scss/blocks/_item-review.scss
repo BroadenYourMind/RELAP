@@ -12,9 +12,11 @@
         max-width: 346px;
         margin-bottom: 25px;
         }
+
     @include tablet {
         margin: 0 auto 20px;
         }
+
     @include mobile {
         margin-bottom: 16px;
         width: 100%;
@@ -32,6 +34,7 @@
             max-width: 286px;
         }
     }
+    
     &__user-name {
         font-weight: 600;
     }

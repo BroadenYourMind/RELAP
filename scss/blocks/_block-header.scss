@@ -1,11 +1,12 @@
 .block-header {
+    &_color_white {
+        color: $second-font-color;
+        }
+        
     &__subtitle {
         font-family: 'Poppins';
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 18px;
-    }
-    &_color_white {
-    color: $second-font-color;
     }
 }

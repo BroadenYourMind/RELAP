@@ -18,11 +18,13 @@
             left: 409px;
             top: -58px;
         }
+
         @include mobile {
             left: 271px;
             top: -30px;
         }
     }
+
     &__decor2 {
         position: absolute;
         width: 323px;
@@ -36,6 +38,7 @@
             bottom: -199px;
         }
     }
+
     &__decor3 {
         position: absolute;
         width: 140px;
@@ -61,15 +64,18 @@
     &__main-block {
         padding-top: 14px;
     }
+
     &__image-block {
         position: relative;
 
         @include laptop {
             flex: 0 0 auto;
         }
+
         @include tablet {
             margin-right: 88px;
         }
+
         @include mobile {
             margin-right: 0px;
         }
@@ -86,6 +92,7 @@
             left: 0px;
         }
     }
+    
     &__img2 {
         content: url(../img/team/1.png);
         position: absolute;
@@ -99,6 +106,7 @@
             top: 144px;
         }
     }
+
     &__img3 {
         position: absolute;
         top: 266px;
@@ -111,6 +119,7 @@
             left: 159px;
         }
     }
+
     &__img4 {
         position: absolute;
         top: 183px;
@@ -123,6 +132,7 @@
             left: 4px;
         }
     }
+
     &__img5 {
         position: absolute;
         top: 8px;
@@ -135,6 +145,7 @@
             left: 197px;
         }
     }
+    
     &__img6 {
         position: absolute;
         top: -32px;

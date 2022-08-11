@@ -14,6 +14,7 @@
             box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
             border-radius: 3px;
         }
+
         & &-3,
         & &-6 {
             padding-top: 54px;
@@ -27,11 +28,13 @@
         font-size: 24px;
         line-height: 1.333;
     }
+
     &__text {
         font-weight: 400;
         mix-blend-mode: normal;
         opacity: 0.5;
     }
+
     &__image {
         padding-top: 10px;
         min-width: 48px;
@@ -43,6 +46,7 @@
             display: flex;
             justify-content: right;
         }
+
         &-3 {
             padding-right: 3px;
         }
@@ -55,6 +59,7 @@
             top: 12px;
             bottom: 0;
         }
+
         &-2::after {
             content: url(../img/advantages/21.svg);
             position: absolute;
@@ -63,6 +68,7 @@
             top: 2px;
             bottom: 0px;
         }
+
         &-3::after {
             content: url(../img/advantages/31.svg);
             position: absolute;
@@ -71,9 +77,11 @@
             top: -12px;
             bottom: 0px;
         }
+
         &-4 {
             padding-right: 1px;
         }
+
         &-4::after {
             content: url(../img/advantages/41.svg);
             position: absolute;
@@ -82,9 +90,11 @@
             top: 22px;
             bottom: 0px;
         }
+
         &-5 {
             padding-right: 4px;
         }
+
         &-5::after {
             content: url(../img/advantages/51.svg);
             position: absolute;
@@ -93,10 +103,12 @@
             top: 16px;
             bottom: 0px;
         }
+
         &-6 {
             padding-right: 6px;
             padding-bottom: 2px;
         }
+        
         &-6::after {
             content: url(../img/advantages/61.svg);
             position: absolute;
